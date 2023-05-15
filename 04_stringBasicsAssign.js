@@ -26,7 +26,7 @@ stringHandsOn();
  
 /***********************************************/
 
-var str = "     Hey you are doing good, keep it up     ";
+var str = "     Hey you are doing good, keep it up     ";   
 var totalLengthOfString = str.length;
 console.log(" Total length of string is: " , totalLengthOfString);
 

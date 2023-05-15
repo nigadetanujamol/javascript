@@ -62,6 +62,42 @@ console.log("Trimmed total spaces : ", firstNameLength-lengthAfterTrim);
  
 var lastName = "        Kharat   ";
  var trimmedLastName = lastName.trimEnd();
-
 console.log(" afer trimmed last name is = " , trimmedLastName);
+
+
+var greet = "Good Morning";
+var includeResult = greet.includes("ing");
+console.log("Is ing string available inside : ", includeResult);
+
+ 
+
+var searchResult = greet.search("or");
+console.log("Search result : ", searchResult);
+
+
+var sliceResult = greet.slice(3, 8);
+console.log("Slice Result is: ", sliceResult);
+
+ 
+var subStringResult = greet.substring(3, 6);
+console.log("Substring result is: ", subStringResult);
+
+
+//it will split the string with space.
+//program to count the total no of words
+var greet = "Good Morning mate, How are you";
+var resultSplit = greet.split(" ");
+console.log(resultSplit);
+console.log("Total number of words: ",resultSplit.length);
+
+ 
+var resultSplit = greet.split(",");
+console.log(resultSplit);
+console.log("Total number parts: ",resultSplit.length);
+
+ 
+var resultSplit = greet.split("");    //string split character by character
+console.log(resultSplit);
+console.log("Total number of words: ",resultSplit.length);
+
 

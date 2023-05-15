@@ -1,3 +1,17 @@
+//we use string template is used for code, more readable. 
+
+var greet = "Good Morning mate, How are you";
+var resultSplit = greet.split(" ");
+console.log(resultSplit);
+//console.log("After slipt words are:",resultSplit, "Total number of words: ",resultSplit.length);
+
+console.log(`After slipt words are ${resultSplit} Total number of words ${resultSplit.length} `);
+
+ 
+console.log(`Given string is: ${greet}`);
+
+//string methods by using string template.
+
 var myName = "Elon Musk";
 var result = myName.startsWith("E");
 console.log(` Is ${myName} starts with character E: ${result}`);
@@ -21,10 +35,3 @@ var myName = "Elon Musk";
 var result = myName.endsWith("b");
 console.log(` Is ${myName} ends with character "b" : ${result}`);
 
-// function Expression
-var multiplication = function (one, two, three) {
-    var result = one*two*three;
-    return `Multiplication is: ${result}`;
-}
-var result = multiplication(2, 2, 2 );
-console.log(result);

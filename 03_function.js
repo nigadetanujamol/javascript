@@ -5,7 +5,7 @@ function is a resort keyword.
 syntax of function is -----function_keyword function_name ();
  function is not executed unless and until we call function i.e show()*/
 
- function show(){
+ function show(){                    //Function with no arguments. no return value
     console.log("show function");
  }
     console.log("before show function");
@@ -23,7 +23,7 @@ var name2 = "Elon Musk";
 var cityPune = "Pune";
 var cityMumbai = "Mumbai";
 
-
+// function with arguments with no return value.
   function swapVariables(value1,value2,value3){  //arguments
       console.log ("before swap: ",value1 , value2);
       console.log(value3);
@@ -40,4 +40,14 @@ var cityMumbai = "Mumbai";
   swapVariables(cityPune,cityMumbai);
 
 
-    
+    //function with arg with return type
+    function addition(num1, num2){
+        var result = num1 +num2;
+        return result;
+    }
+    var returnValue = addition(100, 200);
+    console.log("Addition of two no is: " ,returnValue);
+
+    var returnResult = addition(101.45, 30.56);
+    console.log("Addition of two no is: " ,returnResult);
+
