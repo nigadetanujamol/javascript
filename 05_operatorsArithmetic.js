@@ -1,6 +1,10 @@
 //which engine the node js use ----->v8
 //and which engine browser js use  -------> chrome
-//
+/*Types of operator is :
+Unary
+binary
+trinary */
+
 console.log(`Addition operator +`);
 var num1 = 10;
 var num2 = 20;
