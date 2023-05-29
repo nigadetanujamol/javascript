@@ -1,6 +1,14 @@
- 
-var arrayOfRollNumbers = [67, 56, 78, 90, 60, 90, 40, 99, 80];
-let arrSpliced = arrayOfRollNumbers.splice(2, 5);  //index 2 ,after index2 print 5 elements
-console.log(arrayOfRollNumbers);
-console.log(arrSpliced);
- 
+let j=0;  // initialization
+let count=10
+while (j<=count) {  // condition
+
+   if (j%2==0) {
+
+      console.log(j);
+      console.log(count);
+   }
+
+   j++; 
+   
+
+}
