@@ -1,14 +1,10 @@
-let j=0;  // initialization
-let count=10
-while (j<=count) {  // condition
 
-   if (j%2==0) {
 
-      console.log(j);
-      console.log(count);
-   }
-
-   j++; 
-   
-
-}
+var a ="Anuj Nigad" ;
+console.log(a);
+var b ="Avyan";
+console.log (b);
+var c = "Amol"
+console.log(c);
+var d = "Tanuja";
+console.log(d);
