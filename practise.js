@@ -1,10 +1,6 @@
-
-
-var a ="Anuj Nigad" ;
+var a = "Anuj" ;
 console.log(a);
-var b ="Avyan";
-console.log (b);
-var c = "Amol"
+var b = "Amol" ;
+console.log(b);
+var c = "Nigade" ;
 console.log(c);
-var d = "Tanuja";
-console.log(d);
