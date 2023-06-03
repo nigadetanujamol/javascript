@@ -1,6 +1,4 @@
-var a = "Anuj" ;
+var z = "Tanaji";
+console.log(z);
+var a = "Manda" ;
 console.log(a);
-var b = "Amol" ;
-console.log(b);
-var c = "Nigade" ;
-console.log(c);

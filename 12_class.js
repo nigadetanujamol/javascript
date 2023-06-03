@@ -24,6 +24,7 @@ const snehal = new Student("Snehal", 22, "Male", "Pune");
 
 const array = [abhijeet, poonam, rushi, snehal];
 
+//here we print all properties of abhijeet
 //we traverse the array.
 for (const student of array) {
     student.showDetails();
@@ -34,7 +35,7 @@ const result = abhijeet instanceof Student;
 console.log(result);
 
 
-class College{
+class College{  //this is a empty class
 
 }
 //rushi is not present in the college so it return false.
