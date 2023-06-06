@@ -1,6 +1,10 @@
-'use strict'
+
+
+'use strict' //compulsary
 // city = "Pune";
 // console.log(city);
+
+//we declare one class person
 
 const person = {
     name: "Stew",
