@@ -1,3 +1,5 @@
+
+
 const arrayNames = ["Shyam", "Anil", "Shubhu", "Jenny", "Bittu", "Kittuu"];
 
 arrayNames.sort(); // Sorting in ascending order
