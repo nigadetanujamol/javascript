@@ -55,24 +55,40 @@ const arrayEmpName = empId.map((element) =>{
  console.log(arrayEmpName);
 
 console.log(``);
-//console.log(`**********emp whose name start with A , V , M ************`);
- //const a =arrayEmps.filter((elements) =>{
- 
- //});
 
+console.log(`**********emp whose name start with A , V , M ************`);
+ const getNames =arrayEmps.filter((elements) =>{
+    return elements.emp_name.startsWith("A") || elements.emp_name.startsWith("V") || elements.emp_name.startsWith("M");
+ })
+ const arrayName1 = getNames.map((element) =>{
+    return element.emp_name;
+ });
+ console.log(arrayName1);
+ console.log(``);
+ 
+ console.log(`or by using for of loop`);
+ const getNames1 =arrayEmps.filter((elements) =>{
+    return elements.emp_name;
+ });
+ const emptyArray =[];
+ for (const key of getNames1) {
+    if(key.emp_name.startsWith("A") || key.emp_name.startsWith("V") || key.emp_name.startsWith("M")){
+                  emptyArray.push(key.emp_name);
+ }
+ }
+console.log(emptyArray);
+ 
  console.log(`***********average salary of all depart*****************`);
- const a1 =arrayEmps.map((elements) =>{
+
+ const getAllSalaries =arrayEmps.map((elements) =>{
     return elements.emp_salary;
  });
-const a2 = a1.reduce((runningTotal , value) =>{
-    return (runningTotal+value) /a1.length;
-
-})
-console.log(a1);
-console.log(a2);
-
-
-
+const sumOfSalary = getAllSalaries.reduce((runningTotal , value) =>{
+    return (runningTotal+value);
+});
+let averageSalary =sumOfSalary/getAllSalaries.length;
+console.log(getAllSalaries);
+console.log(`Average salary of all department= ${averageSalary}`);
 
  console.log(`***********average salary of IT depart*****************`);
 
@@ -84,9 +100,12 @@ console.log(a2);
     return elements.emp_salary;
  });
 
- const c = b.reduce((runningTotal , value) =>{
-     return (runningTotal+value) /(a.length);
+ const sum = b.reduce((runningTotal , value) =>{
+     return (runningTotal+value);
 
- })
+ });
+ let average = (sum/a.length);
  console.log(b);
- console.log(c);
+ console.log(`sum of salaries: ${sum}`);
+ console.log(`average salary of IT dept: ${average}`);
+ 
