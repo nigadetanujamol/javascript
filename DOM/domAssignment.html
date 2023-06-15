@@ -1,0 +1,34 @@
+<!-- selecting element in the DOM -->
+
+<html>
+    <head>
+        <title>Exercise time</title>
+    </head>
+    <body>
+        <main>
+            <div id="overview">
+                <h1>HTML & JavaScript are crucial technologies</h1>
+               <p>The web would not work without them.....</p>
+            </div>
+            <div id="advantages">
+                <ul>
+                    <li>Flexible</li>
+                    <li>Availeble</li>
+                    <li>Magical</li>
+                </ul>
+            </div>
+        </main>
+        <script>
+// select and store three elements in variables
+           const mainHeading =document.querySelector("h1");
+           console.log(mainHeading.innerHTML);
+
+           const secondAdvantage = document.querySelectorAll("li");
+           const secondElement =secondAdvantage[1];
+           console.log(secondElement.innerHTML);   //we have to select li element in that select (avaiable)
+
+           const advDiv = document.querySelector("#advantages");
+           console.log(advDiv.innerHTML);
+        </script>
+    </body>
+</html>
