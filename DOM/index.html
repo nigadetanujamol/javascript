@@ -1,3 +1,5 @@
+<!-- Applying CSS in DOM -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +10,32 @@
 <body>
     <h2 id="personal"> My Personal Details</h2>
     <p class="name"> Name: Gajanan K. </p>
-    <p > Mobile: 8600 2555 88 </p>
-    <h2> My Address </h2>
-    <p> City: Pune </p>
-    <p> Street: Wakad, PIN- 445566 </p>
-    <h3> Contact Details </h3>
+    <p> Mobile: 8600 2555 88 </p>
+    <h2 id="address"> My Address </h2>
+    <p id="city"> City: Pune </p>
+
+    <p onclick="show()"> Street: Wakad, PIN- 445566 </p> 
+    <!-- this fun called in script page . when we click on street: it gives us alert (show fun called) us -->
+
+    <h3 style="border: 1px solid red;" id="contact"> Contact Details </h3> 
 
     <ul>
         <li class="ceo"> Stew </li>
-        <li class="ceo"> Bill </li>    
+        <li class="ceo"> Bill </li>
         <li class="ceo"> Elon </li>
         <li> Ajim </li>
-    </ul> 
+    </ul>
+
+     <a href="https://www.google.com/" target="_blank" class="link"> HOME </a>
+
+     <div class="hobbies">
+
+        <p> Reading </p>
+        <p> Watching Motivational videos </p>
+        <p id="cricket"> Playing cricket </p>
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>

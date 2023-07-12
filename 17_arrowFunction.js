@@ -22,3 +22,4 @@ let add = (num1, num2) => {
 }
 let result = add(100, 200);
 console.log(`Result is ${result}`);
+

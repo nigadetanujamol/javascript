@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>CSS Apply on DOM </title>
+</head>
+<body>
+    <main>
+        <div>
+<h1 id="profile">My Profile Details</h1>
+<h2 style="color: rgb(241, 6, 6); ">Technology Stack</h2>
+
+        </div>
+        <div>
+            <ul class="list">
+               <li> HTML and CSS</li>
+                <li id="AJ">Agile and JIRA</li>
+                <li>Angular and React</li>
+                <li>Oracle Database</li> 
+            </ul>
+        </div>
+            <h1>My Hobbies</h1>
+        <div>
+            <a href="index.html" target="blank" class=" link">My Profile</a>
+        </div>
+        <p>Project Description</p>
+    </main>
+
+        <script>
+    console.log(`============change color of text================`);
+   const change =document.querySelector("#profile");
+   change.style.color ="green";
+
+//    console.log(change.innerHTML); //if we write this then only it display in inspect-->console
+/********************************************************************/
+
+console.log(`=============delete 2nd child node===========`);
+const elementList= document.querySelector(".list")
+const removeElement = document.querySelector("#AJ");
+elementList.removeChild(removeElement);
+
+console.log(`==============change href link============`);
+const selectLink = document.querySelector('.link');
+selectLink.setAttribute(`href` , 'https://www.linkedin.com/login');
+
+        </script>
+</body>
+</html>

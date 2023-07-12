@@ -98,6 +98,6 @@ console.log("Total number parts: ",resultSplit.length);
  
 var resultSplit = greet.split("");    //string split character by character
 console.log(resultSplit);
-console.log("Total number of words: ",resultSplit.length);
+console.log("Total number of char: ",resultSplit.length);
 
 
